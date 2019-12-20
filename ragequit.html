@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get a score of 100</title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+  }
+  </style>
+</head>
+<body>
+<canvas width="400" height="600" id="game"></canvas>
+<script>
+var _0xc41d=["\x67\x61\x6D\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x74\x79\x70\x65","\x77\x69\x64\x74\x68","\x66\x6F\x6E\x74","\x78","\x79","\x75\x70\x64\x61\x74\x65","\x20","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x74\x65\x78\x74","\x66\x69\x6C\x6C\x54\x65\x78\x74","\x33\x30\x70\x78","\x43\x6F\x6E\x73\x6F\x6C\x61\x73","\x77\x68\x69\x74\x65","\x31\x35\x70\x78","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x53\x43\x4F\x52\x45\x3A\x20","\x66\x69\x6C\x6C\x52\x65\x63\x74","\x68\x65\x69\x67\x68\x74","\x63\x6C\x65\x61\x72\x52\x65\x63\x74","\x64\x78","\x64\x79","\x75\x6E\x73\x68\x69\x66\x74","\x63\x65\x6C\x6C\x73","\x6C\x65\x6E\x67\x74\x68","\x6D\x61\x78\x43\x65\x6C\x6C\x73","\x70\x6F\x70","\x72\x65\x64","\x67\x72\x65\x65\x6E","\x53\x65\x65\x6D\x73\x20\x6C\x69\x6B\x65\x20\x79\x6F\x75\x20\x68\x61\x76\x65\x20\x62\x65\x61\x74\x65\x6E\x20\x74\x68\x65\x20\x67\x61\x6D\x65\x2E\x20\x67\x61\x6D\x65\x6F\x76\x65\x72\x2E","\x66\x6F\x72\x45\x61\x63\x68","\x6B\x65\x79\x64\x6F\x77\x6E","\x77\x68\x69\x63\x68","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72"];var canvas=document[_0xc41d[1]](_0xc41d[0]);var context=canvas[_0xc41d[3]](_0xc41d[2]);function component(_0x20bax4,_0x20bax5,_0x20bax6,_0x20bax7,_0x20bax8,_0x20bax9){this[_0xc41d[4]]= _0x20bax9;this[_0xc41d[5]]= _0x20bax4;this[_0xc41d[6]]= _0x20bax5;this[_0xc41d[7]]= _0x20bax7;this[_0xc41d[8]]= _0x20bax8;this[_0xc41d[9]]= function(){ctx= context;ctx[_0xc41d[6]]= this[_0xc41d[5]]+ _0xc41d[10]+ this[_0xc41d[6]];ctx[_0xc41d[11]]= _0x20bax6;ctx[_0xc41d[13]](this[_0xc41d[12]],this[_0xc41d[7]],this[_0xc41d[8]])}}var grid=16;var count=0;var score=0;var MyScore;myScore=  new component(_0xc41d[14],_0xc41d[15],_0xc41d[16],150,450,_0xc41d[12]);completed=  new component(_0xc41d[17],_0xc41d[15],_0xc41d[16],50,500,_0xc41d[12]);var snake={x:160,y:160,dx:grid,dy:0,cells:[],maxCells:4};var apple={x:320,y:320};function getRandomInt(_0x20bax11,_0x20bax12){return Math[_0xc41d[19]](Math[_0xc41d[18]]()* (_0x20bax12- _0x20bax11))+ _0x20bax11}myScore[_0xc41d[12]]= _0xc41d[20]+ score.toString();myScore[_0xc41d[9]]();function loop(){requestAnimationFrame(loop);context[_0xc41d[11]]= _0xc41d[16];context[_0xc41d[21]](0,0,1,400);context[_0xc41d[21]](0,0,400,1);context[_0xc41d[21]](399,0,1,400);context[_0xc41d[21]](0,399,400,1);if(++count< 4){return};count= 0;context[_0xc41d[23]](1,1,canvas[_0xc41d[5]]- 2,canvas[_0xc41d[22]]- 202);snake[_0xc41d[7]]+= snake[_0xc41d[24]];snake[_0xc41d[8]]+= snake[_0xc41d[25]];if(snake[_0xc41d[7]]< 0){snake[_0xc41d[7]]= canvas[_0xc41d[5]]- grid}else {if(snake[_0xc41d[7]]>= canvas[_0xc41d[5]]){snake[_0xc41d[7]]= 0}};if(snake[_0xc41d[8]]< 0){snake[_0xc41d[8]]= canvas[_0xc41d[22]]- grid- 200}else {if(snake[_0xc41d[8]]>= canvas[_0xc41d[22]]- 200){snake[_0xc41d[8]]= 0}};snake[_0xc41d[27]][_0xc41d[26]]({x:snake[_0xc41d[7]],y:snake[_0xc41d[8]]});if(snake[_0xc41d[27]][_0xc41d[28]]> snake[_0xc41d[29]]){snake[_0xc41d[27]][_0xc41d[30]]()};context[_0xc41d[11]]= _0xc41d[31];context[_0xc41d[21]](apple[_0xc41d[7]],apple[_0xc41d[8]],grid- 1,grid- 1);context[_0xc41d[11]]= _0xc41d[32];snake[_0xc41d[27]][_0xc41d[34]](function(_0x20bax14,_0x20bax15){context[_0xc41d[21]](_0x20bax14[_0xc41d[7]],_0x20bax14[_0xc41d[8]],grid- 1,grid- 1);if(_0x20bax14[_0xc41d[7]]=== apple[_0xc41d[7]]&& _0x20bax14[_0xc41d[8]]=== apple[_0xc41d[8]]){snake[_0xc41d[29]]++;score++;context[_0xc41d[23]](0,400,canvas[_0xc41d[5]],canvas[_0xc41d[22]]);myScore[_0xc41d[12]]= _0xc41d[20]+ score.toString();myScore[_0xc41d[9]]();if(score=== 100){context[_0xc41d[23]](0,400,canvas[_0xc41d[5]],canvas[_0xc41d[22]]);completed[_0xc41d[12]]= _0xc41d[33];completed[_0xc41d[9]]();myScore[_0xc41d[12]]= _0xc41d[20]+ score.toString();myScore[_0xc41d[9]]()};apple[_0xc41d[7]]= getRandomInt(0,25)* grid;apple[_0xc41d[8]]= getRandomInt(0,25)* grid};for(var _0x20bax16=_0x20bax15+ 1;_0x20bax16< snake[_0xc41d[27]][_0xc41d[28]];_0x20bax16++){if(_0x20bax14[_0xc41d[7]]=== snake[_0xc41d[27]][_0x20bax16][_0xc41d[7]]&& _0x20bax14[_0xc41d[8]]=== snake[_0xc41d[27]][_0x20bax16][_0xc41d[8]]){snake[_0xc41d[7]]= 160;snake[_0xc41d[8]]= 160;snake[_0xc41d[27]]= [];snake[_0xc41d[29]]= 4;snake[_0xc41d[24]]= grid;snake[_0xc41d[25]]= 0;score= 0;context[_0xc41d[23]](0,400,canvas[_0xc41d[5]],canvas[_0xc41d[22]]);myScore[_0xc41d[12]]= _0xc41d[20]+ score.toString();myScore[_0xc41d[9]]();apple[_0xc41d[7]]= getRandomInt(0,25)* grid;apple[_0xc41d[8]]= getRandomInt(0,25)* grid}}})}document[_0xc41d[37]](_0xc41d[35],function(_0x20bax17){if(_0x20bax17[_0xc41d[36]]=== 37&& snake[_0xc41d[24]]=== 0){snake[_0xc41d[24]]=  -grid;snake[_0xc41d[25]]= 0}else {if(_0x20bax17[_0xc41d[36]]=== 38&& snake[_0xc41d[25]]=== 0){snake[_0xc41d[25]]=  -grid;snake[_0xc41d[24]]= 0}else {if(_0x20bax17[_0xc41d[36]]=== 39&& snake[_0xc41d[24]]=== 0){snake[_0xc41d[24]]= grid;snake[_0xc41d[25]]= 0}else {if(_0x20bax17[_0xc41d[36]]=== 40&& snake[_0xc41d[25]]=== 0){snake[_0xc41d[25]]= grid;snake[_0xc41d[24]]= 0}}}}});requestAnimationFrame(loop)
+</script>
+</body>
+</html>
